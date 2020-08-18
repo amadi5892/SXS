@@ -15,8 +15,8 @@ export default function App() {
     <Router>
       <div>
         <nav className="nav-bar">
-          <h4>Logo</h4>
-          <ul>
+          <h4 className="logo">Logo</h4>
+          <ul className="nav-btns">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -27,6 +27,7 @@ export default function App() {
               <Link to="/topics">Shop</Link>
             </li>
           </ul>
+          <button>Cart</button>
         </nav>
         
 
