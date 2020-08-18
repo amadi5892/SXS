@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Home from './components/Home';
+import Shop from './components/Shop';
 
 export default function App() {
   return (
@@ -24,7 +25,7 @@ export default function App() {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/topics">Shop</Link>
+              <Link to="/shop">Shop</Link>
             </li>
           </ul>
           <button>Cart</button>
@@ -35,8 +36,8 @@ export default function App() {
           <Route path="/about">
             {/* <About /> */}
           </Route>
-          <Route path="/topics">
-            {/* <Topics /> */}
+          <Route path="/shop">
+            <Shop />
           </Route>
           <Route path="/">
             <Home />
