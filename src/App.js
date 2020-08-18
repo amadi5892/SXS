@@ -8,10 +8,13 @@ import {
   useParams
 } from "react-router-dom";
 import './App.css';
+import {useSelector} from 'react-redux';
 import Home from './components/Home';
 import Shop from './components/Shop';
 
 export default function App() {
+  const counter = useSelector(state => state.counter)
+
   return (
     <Router>
       <div>
@@ -28,7 +31,7 @@ export default function App() {
               <Link to="/shop">Shop</Link>
             </li>
           </ul>
-          <button>Cart</button>
+          <button>Cart {counter}</button>
         </nav>
         
 
