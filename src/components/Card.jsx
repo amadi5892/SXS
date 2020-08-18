@@ -7,6 +7,8 @@ const Card = (props) => {
             <h3> {props.item} </h3>
             <h4> {props.price} </h4>
             <p> {props.description} </p>
+            <button>+</button>
+            <button>-</button>
         </div>
     )
 }

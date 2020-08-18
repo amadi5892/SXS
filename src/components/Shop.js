@@ -4,12 +4,15 @@ import Products from './Products';
 
 const createProduct = (Product) => {
         return(
-            <Card 
-            key={Product.id}
-            item={Product.item}
-            price={Product.price}
-            description={Product.description}
-            />
+            <div className="organize">
+                <Card 
+                key={Product.id}
+                item={Product.item}
+                price={Product.price}
+                description={Product.description}
+                />
+            </div>
+            
         )
         
 }
@@ -20,7 +23,7 @@ const Shop = () => {
         <div>
             <h1>Welcome to the Shop!</h1>
 
-            <div>
+            <div className="showcase">
                 {Products.map(createProduct)}
             </div>
         </div>
